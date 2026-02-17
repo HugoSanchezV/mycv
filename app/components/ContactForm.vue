@@ -25,17 +25,17 @@
           </p>
 
           <div class="space-y-6">
-            <a href="mailto:hola@tu-dominio.com" class="group flex items-center gap-5 p-4 -mx-4 rounded-2xl hover:bg-white dark:hover:bg-slate-900/50 transition-all duration-300">
+            <a href="mailto:sanchezhugo13v@gmail.com" class="group flex items-center gap-5 p-4 -mx-4 rounded-2xl hover:bg-white dark:hover:bg-slate-900/50 transition-all duration-300">
               <div class="w-14 h-14 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-400 group-hover:bg-emerald-500 group-hover:border-emerald-500 group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-sm">
                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               </div>
               <div>
                 <span class="block text-xs font-bold text-slate-500 dark:text-slate-500 uppercase tracking-widest mb-1">Email</span>
-                <span class="text-lg font-medium text-slate-900 dark:text-slate-200 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">hola@tu-dominio.com</span>
+                <span class="text-lg font-medium text-slate-900 dark:text-slate-200 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">sanchezhugo13v@gmail.com</span>
               </div>
             </a>
             
-            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-5 p-4 -mx-4 rounded-2xl hover:bg-white dark:hover:bg-slate-900/50 transition-all duration-300">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-5 p-4 -mx-4 rounded-2xl hover:bg-white dark:hover:bg-slate-900/50 transition-all duration-300">
               <div class="w-14 h-14 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-400 group-hover:bg-[#0077b5] group-hover:border-[#0077b5] group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-sm">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </div>

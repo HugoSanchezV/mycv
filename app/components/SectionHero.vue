@@ -26,7 +26,7 @@
 
         <ScrollReveal :delay="150">
           <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] transition-colors duration-300">
-            <span class="block text-slate-900 dark:text-slate-50">Hola, soy [Tu Nombre].</span>
+            <span class="block text-slate-900 dark:text-slate-50">Hola, soy Hugo Sánchez.</span>
             <span class="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-400 dark:from-emerald-400 dark:via-emerald-300 dark:to-teal-200 pb-2">
               Arquitecto Backend.
             </span>
@@ -35,8 +35,8 @@
 
         <ScrollReveal :delay="300">
           <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-lg transition-colors duration-300 font-light">
-            Diseño y escalo sistemas robustos. Transformo lógica compleja en APIs eficientes de alto rendimiento con
-            <strong class="text-slate-900 dark:text-slate-100 font-semibold">PHP, Laravel y Vue</strong>.
+            Especialista en <strong class="text-slate-900 dark:text-slate-100 font-semibold">optimización de procesos masivos</strong>. Transformo lógica compleja en sistemas eficientes de alto rendimiento con
+            <strong class="text-slate-900 dark:text-slate-100 font-semibold">PHP, Laravel y SQL Server</strong>.
           </p>
         </ScrollReveal>
 

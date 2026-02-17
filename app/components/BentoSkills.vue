@@ -19,128 +19,103 @@
     <!-- Grid -->
     <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
-      <!-- Card 1: Backend (Large) -->
+      <!-- Card 1: Core Backend (Large) -->
       <ScrollReveal class="md:col-span-2" :delay="100">
-        <div class="group relative h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 rounded-[2rem] p-8 lg:p-10 hover:border-emerald-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-1">
-          <!-- Background decoration -->
+        <div class="group relative h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 rounded-[2rem] p-8 lg:p-10 hover:border-red-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/10 hover:-translate-y-1">
           <div class="absolute top-0 right-0 p-12 opacity-[0.03] dark:opacity-[0.05] group-hover:scale-110 transition-transform duration-700 pointer-events-none">
             <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M14.6 16.6l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4z"/></svg>
           </div>
           
           <div class="relative z-10">
-            <div class="w-12 h-12 mb-6 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-300">
+            <div class="w-12 h-12 mb-6 rounded-2xl bg-red-500/10 flex items-center justify-center text-red-600 dark:text-red-400 group-hover:scale-110 transition-transform duration-300">
+              <!-- Laravel/Backend Icon -->
               <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
             </div>
 
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Arquitectura Backend</h3>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Core Backend</h3>
             <p class="text-slate-600 dark:text-slate-400 mb-8 max-w-lg text-lg leading-relaxed">
-              Diseño de APIs RESTful y GraphQL escalables. Especialista en patrones de diseño, optimización de consultas SQL y seguridad de datos.
+              Desarrollo robusto con <strong>Laravel</strong>, Eloquent ORM y autenticación segura. Gestión avanzada de bases de datos.
             </p>
             
             <div class="flex flex-wrap gap-3">
-              <span class="px-3 py-1.5 bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 text-sm font-semibold rounded-lg border border-red-100 dark:border-red-500/20">Laravel 11+</span>
-              <span class="px-3 py-1.5 bg-purple-50 dark:bg-purple-500/10 text-purple-600 dark:text-purple-400 text-sm font-semibold rounded-lg border border-purple-100 dark:border-purple-500/20">PHP 8.3</span>
-              <span class="px-3 py-1.5 bg-sky-50 dark:bg-sky-500/10 text-sky-600 dark:text-sky-400 text-sm font-semibold rounded-lg border border-sky-100 dark:border-sky-500/20">Swoole / Octane</span>
+              <span class="px-3 py-1.5 bg-red-50 dark:bg-red-500/10 text-red-600 dark:text-red-400 text-sm font-semibold rounded-lg border border-red-100 dark:border-red-500/20">PHP / Laravel</span>
+              <span class="px-3 py-1.5 bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 text-sm font-semibold rounded-lg border border-blue-100 dark:border-blue-500/20">SQL Server</span>
+              <span class="px-3 py-1.5 bg-sky-50 dark:bg-sky-500/10 text-sky-600 dark:text-sky-400 text-sm font-semibold rounded-lg border border-sky-100 dark:border-sky-500/20">MySQL</span>
+              <span class="px-3 py-1.5 bg-yellow-50 dark:bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 text-sm font-semibold rounded-lg border border-yellow-100 dark:border-yellow-500/20">Python</span>
             </div>
           </div>
         </div>
       </ScrollReveal>
 
-      <!-- Card 2: Frontend -->
+      <!-- Card 2: Frontend (Small) -->
       <ScrollReveal :delay="200">
         <div class="group relative h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 rounded-[2rem] p-8 hover:border-emerald-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-1">
           
-          <div class="w-12 h-12 mb-6 rounded-2xl bg-teal-500/10 flex items-center justify-center text-teal-600 dark:text-teal-400 group-hover:scale-110 transition-transform duration-300">
+          <div class="w-12 h-12 mb-6 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-300">
+            <!-- Vue Icon -->
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </div>
           
-          <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Frontend Reactivo</h3>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Frontend & Web</h3>
           <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
-            Interfaces dinámicas SPA/SSR con gestión de estado compleja y UX fluida.
+            Interfaces reactivas y modernas.
           </p>
           
           <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-semibold rounded-md border border-emerald-100 dark:border-emerald-500/20">Vue 3</span>
-            <span class="px-2.5 py-1 bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-semibold rounded-md border border-blue-100 dark:border-blue-500/20">Nuxt 4</span>
+            <span class="px-2.5 py-1 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-semibold rounded-md border border-emerald-100 dark:border-emerald-500/20">Vue.js</span>
+            <span class="px-2.5 py-1 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-semibold rounded-md border border-indigo-100 dark:border-indigo-500/20">Inertia.js</span>
             <span class="px-2.5 py-1 bg-cyan-50 dark:bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 text-xs font-semibold rounded-md border border-cyan-100 dark:border-cyan-500/20">Tailwind</span>
           </div>
         </div>
       </ScrollReveal>
 
-      <!-- Card 3: DevOps/Data (Vertical) -->
-      <ScrollReveal class="md:row-span-2" :delay="300">
-        <div class="group h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 rounded-[2rem] p-8 hover:border-emerald-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-1">
-          
-          <div class="w-12 h-12 mb-6 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+      <!-- Card 3: Data Engineering (Large) -->
+      <ScrollReveal class="md:col-span-2" :delay="300">
+        <div class="group h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 rounded-[2rem] p-8 lg:p-10 hover:border-amber-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 hover:-translate-y-1">
+          <!-- Background decoration -->
+          <div class="absolute top-0 right-0 p-12 opacity-[0.03] dark:opacity-[0.05] group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+            <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
           </div>
 
-          <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-6">Datos & Infraestructura</h3>
-          <ul class="space-y-4">
-            <li class="group/item flex items-center gap-4 text-slate-600 dark:text-slate-400 text-sm">
-              <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0 group-hover/item:scale-110 transition-transform">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+          <div class="relative z-10 flex flex-col md:flex-row gap-8 items-start">
+            <div class="flex-1">
+              <div class="w-12 h-12 mb-6 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform duration-300">
+                <!-- Data Icon -->
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
               </div>
-              <div>
-                <strong class="block text-slate-800 dark:text-slate-200">MySQL / PostgreSQL</strong>
-                <span class="text-xs">Optimización & Indexing</span>
+
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3">Data Engineering & BI</h3>
+              <p class="text-slate-600 dark:text-slate-400 mb-6 text-lg leading-relaxed">
+                Diseño de flujos ETL y procesamiento masivo. Visualización estratégica con <strong>Power BI (DAX)</strong>.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1.5 bg-amber-50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400 text-sm font-semibold rounded-lg border border-amber-100 dark:border-amber-500/20">Power BI</span>
+                <span class="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold rounded-lg border border-slate-200 dark:border-slate-700">ETL</span>
+                <span class="px-3 py-1.5 bg-green-50 dark:bg-green-500/10 text-green-600 dark:text-green-400 text-sm font-semibold rounded-lg border border-green-100 dark:border-green-500/20">Excel Avanzado</span>
               </div>
-            </li>
-            <li class="group/item flex items-center gap-4 text-slate-600 dark:text-slate-400 text-sm">
-              <div class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-600 dark:text-red-400 shrink-0 group-hover/item:scale-110 transition-transform">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              </div>
-              <div>
-                <strong class="block text-slate-800 dark:text-slate-200">Redis</strong>
-                <span class="text-xs">Caching Strategies</span>
-              </div>
-            </li>
-            <li class="group/item flex items-center gap-4 text-slate-600 dark:text-slate-400 text-sm">
-              <div class="w-8 h-8 rounded-lg bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center text-cyan-600 dark:text-cyan-400 shrink-0 group-hover/item:scale-110 transition-transform">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"/></svg>
-              </div>
-              <div>
-                <strong class="block text-slate-800 dark:text-slate-200">Docker</strong>
-                <span class="text-xs">Containerization</span>
-              </div>
-            </li>
-            <li class="group/item flex items-center gap-4 text-slate-600 dark:text-slate-400 text-sm">
-              <div class="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-400 shrink-0 group-hover/item:scale-110 transition-transform">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
-              </div>
-              <div>
-                <strong class="block text-slate-800 dark:text-slate-200">AWS</strong>
-                <span class="text-xs">S3, EC2, Lambda</span>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </ScrollReveal>
 
-      <!-- Card 4: Philosophy (Wide) -->
-      <ScrollReveal class="md:col-span-2 lg:col-span-2" :delay="400">
-        <div class="group h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 rounded-[2rem] p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 hover:border-emerald-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-1">
-          <div class="flex items-start gap-5">
-            <div class="hidden sm:flex w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex-center items-center justify-center text-slate-500 dark:text-slate-400 group-hover:text-emerald-500 transition-colors">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-            </div>
-            <div>
-              <h4 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">Filosofía de Desarrollo</h4>
-              <div class="flex flex-wrap gap-x-6 gap-y-2 text-slate-600 dark:text-slate-400 font-medium">
-                <span class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Testing (Pest/PHPUnit)
-                </span>
-                <span class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> SOLID Principles
-                </span>
-                <span class="flex items-center gap-2">
-                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Clean Code
-                </span>
-              </div>
-            </div>
+      <!-- Card 4: Tools & Environment (Small) -->
+      <ScrollReveal :delay="400">
+        <div class="group relative h-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-slate-200/60 dark:border-slate-800/60 rounded-[2rem] p-8 hover:border-indigo-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/10 hover:-translate-y-1">
+          <div class="w-12 h-12 mb-6 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform duration-300">
+             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
           </div>
-          <div class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          
+          <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">Herramientas</h3>
+          
+          <ul class="space-y-2 mb-4 text-sm text-slate-600 dark:text-slate-400">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Git / GitHub</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Azure</li>
+          </ul>
+
+          <div class="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800 inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-300 text-xs font-bold rounded-full">
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Inglés B1 (TOEIC 610)
           </div>
         </div>
       </ScrollReveal>

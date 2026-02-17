@@ -78,9 +78,14 @@
                 <div class="space-y-4 mb-8">
                   <div v-for="(achievement, i) in job.achievements" :key="i" class="flex items-start gap-4 group/item">
                     <div class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
-                      <svg class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                      <!-- Custom Icon or Default Check -->
+                      <svg v-if="achievement.icon === 'lightning'" class="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                      <svg v-else-if="achievement.icon === 'gear'" class="w-3.5 h-3.5 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                      <svg v-else-if="achievement.icon === 'database'" class="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>
+                      <svg v-else-if="achievement.icon === 'code'" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                      <svg v-else class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                     </div>
-                    <span class="text-sm text-slate-600 dark:text-slate-400 group-hover/item:text-slate-900 dark:group-hover/item:text-slate-200 transition-colors">{{ achievement }}</span>
+                    <span class="text-sm text-slate-600 dark:text-slate-400 group-hover/item:text-slate-900 dark:group-hover/item:text-slate-200 transition-colors" v-html="achievement.text"></span>
                   </div>
                 </div>
 
@@ -113,40 +118,48 @@ import ScrollReveal from './ScrollReveal.vue'
 // Array de datos: Fácil de mantener y actualizar sin tocar el HTML
 const experiences = ref([
   {
-    role: 'Lead Backend Engineer / Arquitecto',
-    company: 'TechCorp Solutions',
-    period: 'Mar 2024 - Presente',
+    role: 'Procesador de Datos / Backend Developer',
+    company: 'Grupo Ascencio García',
+    period: '2025 - Presente',
     current: true,
-    description: 'Liderazgo técnico del equipo backend, definiendo la arquitectura para la migración de un monolito heredado a una arquitectura orientada a servicios (SOA).',
+    description: 'Optimización de infraestructura y procesamiento de datos para la toma de decisiones estratégicas.',
     achievements: [
-      'Reducción del tiempo de respuesta de la API principal en un 60% implementando caché con Redis y optimización de Eloquent.',
-      'Diseño e implementación de pipelines CI/CD automatizados, reduciendo los fallos en producción en un 40%.'
+      { 
+        text: 'Refactorización de módulos críticos en <strong>PHP moderno (PDO)</strong>, implementando chunking para eliminar cuellos de botella.',
+        icon: 'code'
+      },
+      { 
+        text: 'Optimización: Reducción de tiempos de procesamiento masivo de <strong>+3 min a menos de 5 segundos</strong> para cargas de +4,000 registros.',
+        icon: 'lightning'
+      },
+      { 
+        text: 'Diseño de flujos ETL desde <strong>MS SQL Server hacia Power BI</strong> para dashboards operativos de costos.',
+        icon: 'database'
+      }
     ],
-    technologies: ['Laravel 11', 'PHP 8.3', 'Vue 3', 'Redis', 'Docker', 'AWS']
-  },
-  {
-    role: 'Senior Backend Developer',
-    company: 'E-Commerce Global LATAM',
-    period: 'Ene 2021 - Feb 2024',
-    current: false,
-    description: 'Desarrollo y mantenimiento del motor de pagos y gestión de inventario para una plataforma con más de 50,000 usuarios activos diarios.',
-    achievements: [
-      'Integración de pasarelas de pago múltiples (Stripe, PayPal) mediante patrones de diseño Strategy y Factory.',
-      'Refactorización del sistema de reportes, bajando el consumo de RAM del servidor de 8GB a 2GB usando Laravel Jobs y colas.'
-    ],
-    technologies: ['Laravel 8-10', 'PHP 8.0', 'Vue.js 2/3', 'MySQL', 'Pest PHP']
+    technologies: ['PHP 8.3', 'PDO', 'SQL Server', 'Power BI', 'ETL']
   },
   {
     role: 'Fullstack Developer',
-    company: 'Agencia Digital Innova',
-    period: 'Jun 2018 - Dic 2020',
+    company: 'Enlazac',
+    period: '2024 - 2025',
     current: false,
-    description: 'Desarrollo de aplicaciones web a medida (SaaS, CRMs) para clientes internacionales, participando en todo el ciclo de vida del software.',
+    description: 'Desarrollo de soluciones completas para la gestión de infraestructura de red y automatización de procesos.',
     achievements: [
-      'Creación de un panel administrativo modular en Vue SPA que fue reutilizado en 5 proyectos distintos, ahorrando 200h de desarrollo.',
-      'Diseño de bases de datos relacionales normalizadas para alta concurrencia.'
+      { 
+        text: 'Desarrollo de plataforma administrativa WISP con <strong>Laravel 11, Inertia.js y Vue 3</strong>.',
+        icon: 'code'
+      },
+      { 
+        text: 'Implementación de motor de aprovisionamiento autónomo mediante <strong>Laravel Jobs/Events</strong>.',
+        icon: 'gear'
+      },
+      { 
+        text: 'Orquestación de pasarelas de pago (PayPal, Mercado Pago) y notificaciones vía API de Telegram y Twilio.',
+        icon: 'gear'
+      }
     ],
-    technologies: ['PHP 7.4', 'Laravel', 'Vue.js', 'Bootstrap / Tailwind', 'PostgreSQL']
+    technologies: ['Laravel 11', 'Inertia.js', 'Vue 3', 'MySQL', 'Redis']
   }
 ])
 </script>

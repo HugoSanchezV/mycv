@@ -28,7 +28,7 @@
         </a>
 
         <a 
-          href="https://linkedin.com/in/tu-usuario" 
+          href="#" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Perfil de LinkedIn"
@@ -40,7 +40,7 @@
         </a>
 
         <a 
-          href="mailto:hola@tu-dominio.com" 
+          href="mailto:sanchezhugo13v@gmail.com" 
           aria-label="Enviar correo electrónico"
           class="text-slate-400 hover:text-emerald-600 dark:text-slate-500 dark:hover:text-emerald-400 transition-colors"
         >

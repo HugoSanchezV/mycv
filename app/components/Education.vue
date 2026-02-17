@@ -29,17 +29,35 @@
               <div 
                 v-for="(item, index) in academicStudies" 
                 :key="index"
-                class="border-l-2 border-slate-200 dark:border-slate-800 pl-6 py-1 hover:border-emerald-500 dark:hover:border-emerald-500 transition-colors duration-300"
+                class="relative border-l-2 border-slate-200 dark:border-slate-800 pl-8 py-2 hover:border-emerald-500 dark:hover:border-emerald-500 transition-colors duration-300 group"
               >
-                <h4 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-1">
-                  {{ item.degree }}
-                </h4>
-                <div class="text-slate-500 dark:text-slate-400 font-medium mb-2">
-                  {{ item.school }}
+                <!-- Icon on timeline -->
+                <div class="absolute -left-[9px] top-3 w-4 h-4 rounded-full bg-slate-50 dark:bg-slate-950 border-2 border-slate-300 dark:border-slate-700 group-hover:border-emerald-500 transition-colors"></div>
+
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <h4 class="text-lg md:text-xl font-bold text-slate-900 dark:text-slate-100 mb-1 leading-tight">
+                      {{ item.degree }}
+                    </h4>
+                    <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 font-medium mb-2 text-sm md:text-base">
+                      <!-- Icons Logic -->
+                      <svg v-if="item.icon === 'code'" class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                      <svg v-else-if="item.icon === 'platzi'" class="w-4 h-4 shrink-0 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M10.783 20.325c.436.568 1.15.568 1.583 0l7.35-9.592c.62-.808.044-1.983-.97-1.983H4.405c-1.015 0-1.59 1.175-.97 1.983l7.348 9.592zM12 2.25c.575 0 1.042.467 1.042 1.042v6.666a1.042 1.042 0 01-2.084 0V3.292c0-.575.467-1.042 1.042-1.042z" /></svg>
+                      <svg v-else class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
+                      {{ item.school }}
+                    </div>
+                  </div>
                 </div>
-                <time class="text-sm font-mono text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-500/20">
-                  {{ item.period }}
-                </time>
+                
+                <div class="flex items-center gap-3 mt-1">
+                  <time class="text-xs font-mono text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-500/20">
+                    {{ item.period }}
+                  </time>
+                  <span v-if="item.status" class="flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-500/20 animate-pulse">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                    {{ item.status }}
+                  </span>
+                </div>
               </div>
             </div>
           </ScrollReveal>
@@ -90,36 +108,37 @@ import ScrollReveal from './ScrollReveal.vue'
 const academicStudies = [
   {
     degree: 'Ingeniería en Sistemas Computacionales',
-    school: 'Universidad Tecnológica Nacional',
-    period: '2015 - 2019'
+    school: 'Tec. Superior de Fresnillo',
+    period: '2015 - 2019',
+    icon: 'academic'
   },
   {
-    degree: 'Especialización en Arquitectura de Software',
-    school: 'Platzi Master',
-    period: '2020 - 2021'
+    degree: 'Especialización en Desarrollo Web Backend con PHP',
+    school: 'Platzi',
+    period: '2025',
+    icon: 'platzi'
+  },
+  {
+    degree: 'Ingeniería de IA con Python',
+    school: 'Código Facilito',
+    period: 'Actualidad',
+    status: 'En Progreso',
+    icon: 'code'
   }
 ]
 
 const certifications = [
   {
-    name: 'AWS Certified Solutions Architect – Associate',
-    issuer: 'Amazon Web Services',
-    year: '2023'
+    name: 'Inglés Nivel B1',
+    issuer: 'TOEIC (610 pts)',
+    year: '2024',
+    icon: 'language'
   },
   {
-    name: 'Certified Laravel Developer',
-    issuer: 'Laravel',
-    year: '2022'
-  },
-  {
-    name: 'Professional Scrum Master I (PSM I)',
-    issuer: 'Scrum.org',
-    year: '2021'
-  },
-  {
-    name: 'MongoDB Certified Developer Associate',
-    issuer: 'MongoDB University',
-    year: '2020'
+    name: 'Especialización Backend con Java',
+    issuer: 'Oracle Next Education',
+    year: '2024',
+    icon: 'java'
   }
 ]
 </script>

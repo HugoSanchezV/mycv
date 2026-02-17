@@ -6,7 +6,7 @@
     <LazyBentoSkills />
     <LazyExperienceTimeline />
     <LazyEducation />
-    <LazyProjectCard />
+    <!-- <LazyProjectCard /> -->
     <LazyContactForm />
     <LazyFooter />
     <!-- <NuxtRouteAnnouncer />
