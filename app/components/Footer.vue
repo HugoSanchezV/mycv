@@ -5,7 +5,7 @@
       <!-- Brand & Copyright -->
       <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
         <span class="text-xl font-bold font-mono text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
-          &lt;DevAlejandro /&gt;
+          &lt;DevSanchez /&gt;
         </span>
         <span class="hidden md:inline text-slate-300 dark:text-slate-700">|</span>
         <p class="text-sm text-slate-500 dark:text-slate-400">

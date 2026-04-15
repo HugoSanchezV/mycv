@@ -14,7 +14,7 @@
         <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 text-white font-mono text-sm shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
           &lt;/&gt;
         </span>
-        <span>Dev<span class="text-emerald-600 dark:text-emerald-400">Alejandro</span></span>
+        <span>Dev<span class="text-emerald-600 dark:text-emerald-400">Sanchez</span></span>
       </a>
 
       <!-- Desktop Navigation -->

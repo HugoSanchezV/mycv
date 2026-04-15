@@ -32,14 +32,14 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'Alejandro | Senior Backend Engineer & Arquitecto',
-  ogTitle: 'Alejandro | Senior Backend Engineer & Arquitecto',
-  description: 'Portafolio profesional de Alejandro. Especialista en diseño de APIs, sistemas escalables y arquitectura backend con PHP, Laravel y Vue 3.',
-  ogDescription: 'Portafolio profesional de Alejandro. Especialista en diseño de APIs, sistemas escalables y arquitectura backend con PHP, Laravel y Vue 3.',
+  title: 'Hugo | Backend Engineer & Arquitecto',
+  ogTitle: 'Hugo | Backend Engineer & Arquitecto',
+  description: 'Portafolio profesional de Hugo. Especialista en diseño de APIs, sistemas escalables y arquitectura backend con PHP, Laravel y Vue 3.',
+  ogDescription: 'Portafolio profesional de Hugo. Especialista en diseño de APIs, sistemas escalables y arquitectura backend con PHP, Laravel y Vue 3.',
   ogImage: '/og-image.jpg',
   ogUrl: 'https://tu-dominio.com',
-  twitterTitle: 'Alejandro | Senior Backend Engineer & Arquitecto',
-  twitterDescription: 'Portafolio profesional de Alejandro. Especialista en diseño de APIs, sistemas escalables y arquitectura backend con PHP, Laravel y Vue 3.',
+  twitterTitle: 'Hugo | Backend Engineer & Arquitecto',
+  twitterDescription: 'Portafolio profesional de Hugo. Especialista en diseño de APIs, sistemas escalables y arquitectura backend con PHP, Laravel y Vue 3.',
   twitterImage: '/og-image.jpg',
   twitterCard: 'summary_large_image',
 })

@@ -26,7 +26,7 @@
 
         <ScrollReveal :delay="150">
           <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] transition-colors duration-300">
-            <span class="block text-slate-900 dark:text-slate-50">Hola, soy Hugo Sánchez.</span>
+            <span class="block text-slate-900 dark:text-slate-50">Soy el Ing. Hugo Sánchez.</span>
             <span class="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-400 dark:from-emerald-400 dark:via-emerald-300 dark:to-teal-200 pb-2">
               Arquitecto Backend.
             </span>
